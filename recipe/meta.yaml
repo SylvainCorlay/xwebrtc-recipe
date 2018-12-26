@@ -1,6 +1,6 @@
 {% set name = "xwebrtc" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "6727dd9882b2d9a176d8f07248dc441056666a77a809d5ebdaa14752c3f8b40b" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "46b4408bd46d52f6139da7718a2b6d40d8ee3db6230e6f70fb9e7df71f272932" %}
 
 package:
   name: {{ name|lower }}
@@ -22,18 +22,18 @@ requirements:
     - toolchain
     - cmake
     - gcc-7             # [linux]
-    - xeus >=0.15.0,<0.16
-    - xtl >=0.4.0,<0.5
+    - xeus >=0.17.0,<0.18
+    - xtl >=0.5.0,<0.6
     - xproperty >=0.7.0,<0.8
-    - xwidgets >=0.14.0,<0.15
+    - xwidgets >=0.15.0,<0.16
     - clangdev          # [osx]
     - libcxx            # [osx]
   run:
-    - xeus >=0.15.0,<0.16
+    - xeus >=0.17.0,<0.18
     - cppzmq 4.3.0
-    - xtl >=0.4.0,<0.5
+    - xtl >=0.5.0,<0.6
     - xproperty >=0.7.0,<0.8
-    - xwidgets >=0.14.0,<0.15.0
+    - xwidgets >=0.15.0,<0.16.0
 
 test:
   commands:
